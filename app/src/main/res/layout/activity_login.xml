@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backGround"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp"
+    tools:ignore="missingPrefix">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/login_logo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="110dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:textSize="17dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:font="Regular"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textCursorDrawable="@null"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        android:hint="e-mail"
+        />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        app:font="Regular"
+        app:layout_constraintRight_toRightOf="@+id/emailInput"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput"
+        android:textCursorDrawable="@null"
+        android:textColor="#FFFFFF"
+        android:hint="password"
+        />
+
+    <CheckBox
+        android:id="@+id/saveID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:checked="false"
+        android:text="아이디 저장"
+        android:button="@drawable/check_color"
+        android:paddingLeft="6dp"
+        android:paddingTop="4dp"
+        app:font="Regular"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="298dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/pink_back_btn"
+        android:text="로 그 인"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInput"
+        app:font="Regular"/>
+
+    <Button
+        android:id="@+id/joinButton"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/pink_back_btn"
+        android:text="회 원 가 입"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/loginButton"
+        app:layout_constraintRight_toRightOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:font="Regular"/>
+
+    <ImageView
+        android:id="@+id/iconMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/emailInput"
+        android:src="@drawable/email_icon"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toTopOf="@+id/emailInput"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/iconPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/iconMail"
+        app:layout_constraintTop_toTopOf="@+id/passwordInput"
+        android:src="@drawable/password_icon"
+        android:layout_marginStart="16dp" />
+
+    <CheckBox
+        android:id="@+id/autoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:text="자동 로그인"
+        android:button="@drawable/check_color"
+        android:paddingTop="4dp"
+        android:paddingLeft="6dp"
+        app:font="Regular"
+        android:textColor="#FFFFFF"
+        app:layout_constraintRight_toRightOf="@+id/passwordInput"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/saveID" />
+
+    <TextView
+        android:id="@+id/emailError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:text="유효하지 않은 이메일 주소입니다."
+        app:font="Regular"
+        android:textColor="@color/colorPrimaryBtn"
+        android:textSize="10dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@+id/emailInput"
+        app:layout_constraintTop_toTopOf="@+id/emailInput" />
+
+    <TextView
+        android:id="@+id/passError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:text="비밀 번호는 4자리 입니다."
+        app:font="Regular"
+        android:textColor="@color/colorPrimaryBtn"
+        android:textSize="10dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@+id/passwordInput"
+        app:layout_constraintTop_toTopOf="@+id/passwordInput" />
+
+</android.support.constraint.ConstraintLayout>

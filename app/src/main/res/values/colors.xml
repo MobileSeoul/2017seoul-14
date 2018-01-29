@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C9B4B</color>
+    <color name="colorPrimaryBtn">#E73A62</color>
+
+    <!--칼린더-->
+    <color name="normal_day">#FFFFFF</color>
+    <color name="selected_day_background">#E73B63</color>
+    <color name="selected_day_text">#FFFFFF</color>
+    <color name="month_day_label_text">#757575</color>
+    <color name="weekends_day">#FFFFFF</color>
+    <color name="current_day_background">#74C18F</color>
+    <color name="normal_month">#FFFFFF</color>
+    <!--칼린더-->
+</resources>

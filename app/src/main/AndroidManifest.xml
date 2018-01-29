@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kkard.seoulroad">
+
+    <!-- permission -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/GreenStatus"
+        android:name=".ApplicationBase">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.kkard.seoulroad"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FragmentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WhiteStatus" />
+        <activity
+            android:name=".Plant.QRCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Plant.CaptureActivityAnyOrientation"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RegistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyMenu.NoticeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Visit.VRegitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyMenu.MyPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyMenu.ModifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyMenu.MyLikeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Map.CourseDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Map.CourseActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MyMenu.MyPostEditActivity"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+    </application>
+
+</manifest>

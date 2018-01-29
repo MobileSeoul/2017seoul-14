@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--칼린더-->
+    <dimen name="text_size_day">12dp</dimen>
+    <dimen name="text_size_month">15dp</dimen>
+    <dimen name="text_size_day_name">14dp</dimen>
+    <dimen name="header_month_height">40dp</dimen>
+    <dimen name="selected_day_radius">16dp</dimen>
+    <dimen name="event_dots_radius">2.5dp</dimen>
+    <dimen name="calendar_height">300dp</dimen>
+    <dimen name="month_info_text_size">24dp</dimen>
+    <!---->
+</resources>

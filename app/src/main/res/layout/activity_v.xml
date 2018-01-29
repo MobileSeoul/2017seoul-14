@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/swipe_layout">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/v_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/material_design_floating_action_menu_item1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/btn_write"
+        fab:fab_label="Menu Item 1"
+        fab:fab_size="normal" />
+</RelativeLayout>

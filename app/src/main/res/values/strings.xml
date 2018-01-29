@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SeoulRoad</string>
+    <string name="title_activity_remove">Map</string>
+    <string name="server_php">http://stou2.cafe24.com/php/</string>
+    <string name="server_image">http://stou2.cafe24.com/image/</string>
+    <string name="server_course_hdpi">http://stou2.cafe24.com/courseImage/hdpi/</string>
+    <string name="server_course_xhdpi">http://stou2.cafe24.com/courseImage/xhdpi/</string>
+    <string name="server_course_xxhdpi">http://stou2.cafe24.com/courseImage/xxhdpi/</string>
+</resources>

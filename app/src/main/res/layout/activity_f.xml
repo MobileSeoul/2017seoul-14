@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.kkard.seoulroad.Calendar_C.DayPickerView
+        xmlns:calendar="http://schemas.android.com/apk/com.kkard.seoulroad"
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@color/colorPrimary"
+        calendar:drawRoundRect="false"/>
+    <android.support.v7.widget.RecyclerView
+        android:background="#FFFFFF"
+        android:id="@+id/fest_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

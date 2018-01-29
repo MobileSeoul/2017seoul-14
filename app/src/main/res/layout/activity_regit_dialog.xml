@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="missingPrefix"
+    android:id="@+id/camera_back"
+    tools:background="@drawable/grey_rounded_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_camera"
+        android:layout_width="330dp"
+        android:layout_height="178dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_back"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사진 선택"
+                app:font="Medium"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"/>
+            <ImageView
+                android:id="@+id/camera_x_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:padding="4dp"
+                android:layout_marginEnd="3dp"
+                android:src="@drawable/camera_x_btn"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+            android:id="@+id/takepicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+                android:layout_centerHorizontal="true"
+            android:background="@drawable/camera_btn"/>
+            <ImageButton
+            android:id="@+id/fromgallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/album_btn"
+            android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

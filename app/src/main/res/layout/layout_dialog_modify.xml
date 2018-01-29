@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="missingPrefix"
+    tools:background="@drawable/grey_rounded_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="178dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_back"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="알      림"
+                app:font="Bold"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"/>
+        </RelativeLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/meg_mod_conf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정이 완료되지 않았습니다.\n        뒤로 가시겠습니까?"
+                app:font="Regular"
+                android:textColor="#5A5858"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:textSize="16dp"
+                />
+            <Button
+            android:id="@+id/mod_conf"
+            android:layout_width="145dp"
+            android:layout_height="40dp"
+                android:text="확 인"
+                app:font="Regular"
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/meg_mod_conf"
+                android:background="@drawable/pink_back_btn"
+            android:layout_marginTop="20dp" />
+            <Button
+                android:id="@+id/mod_cancle"
+                android:layout_width="145dp"
+                android:layout_height="40dp"
+                android:text="취 소"
+                app:font="Regular"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/pink_back_btn"
+                android:layout_toRightOf="@id/mod_conf"
+                android:layout_alignBottom="@id/mod_conf"
+                android:layout_marginLeft="10dp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

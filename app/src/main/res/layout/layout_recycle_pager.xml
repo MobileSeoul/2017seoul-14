@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+    <com.kkard.seoulroad.Circleindicator_C.LoopViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/slidesPager"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_marginBottom="3dp"/>
+    <me.relex.circleindicator.CircleIndicator
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@id/slidesPager"
+        android:padding="5dp"
+        android:id="@+id/indicator"/>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="170dp">
+    <android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="163dp"
+    card_view:cardElevation="7dp"
+        card_view:cardCornerRadius="0dp"
+    >
+    <ImageView
+        android:id="@+id/course_main_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/course1"/>
+</android.support.v7.widget.CardView>
+</LinearLayout>
